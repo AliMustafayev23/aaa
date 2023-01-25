@@ -17,11 +17,19 @@
         background-color: #FFFFFF;
         height: 100%;
         width: 80%;
+       a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: black;
+        column-gap: 20px;
         .logo{
             margin-left: 5%;
             width: 80px;
             height: 5vh;
         }
+       }
         nav{
             display: flex;
             column-gap: 20px;

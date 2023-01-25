@@ -1,0 +1,29 @@
+.detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    column-gap: 100px;
+    .detailleft{
+        display: flex;
+    
+        flex-direction: column;
+      .user{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        column-gap:20px
+      }
+      .delet{
+        padding: 10px;
+        border-radius: 10px;
+        width: 40%;
+        background-color: red;
+        color: white;
+        border-style: none;
+        &:hover{
+            background-color: rgb(231, 127, 127);
+        }
+    }
+    }
+}

@@ -4,6 +4,7 @@ import OurServices from './our services'
 import PopularCourse from './popular course'
 import RegisterNow from './register now'
 import Slider from './slider'
+import UpcomingEvents from "./upcomig events";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
         <PopularCourse/>
         <RegisterNow/>
         <OurServices/>
+        <UpcomingEvents/>
     </div>
   )
 }

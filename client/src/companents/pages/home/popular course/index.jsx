@@ -15,6 +15,19 @@ const PopularCourse = () => {
         setCourse(searched)
       })
     }
+    const normal=()=>{
+      axios("http://localhost:8000/course").then(response=>{
+        setCourse(response.data)
+      })
+    }
+    
+    const sort=()=>{
+     axios("http://localhost:8000/course").then(response=>{
+          let sorted=response.data.sort((a,b)=>a.price-b.price)
+      setCourse(sorted)
+    })
+    
+  }
   return (
     <div className='popularcourse'>
         <div className='line'></div>
@@ -24,7 +37,8 @@ const PopularCourse = () => {
             <input type="text" onChange={(e)=>search(e.target.value)}/>
             <i class="fa-solid fa-magnifying-glass"></i>
         </div>
-        <button className='sort'>sort</button>
+        <button className='sort' onClick={()=>sort()}>sort</button>
+        <button className='sort' onClick={()=>normal()}>Normal</button>
        </div>
        <div className="courses">
 {course.map((e)=>{return(<Link to={`/${e._id}`} className='course'>
