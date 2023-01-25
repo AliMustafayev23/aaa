@@ -1,0 +1,58 @@
+.registernow{
+    height: 60vh;
+    display: flex;
+    .registernowleft{
+        width: 50%;
+        background-color: #FFB606;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        .register{
+            padding: 10px;
+            border-radius: 10px;
+            width: 20%;
+            background-color: black;
+            color: white;
+            border-style: none;
+            &:hover{
+                background-color: #0807025d;
+            }
+        }
+    .registernowtext{
+        display: flex;
+        column-gap: 10px;
+        .faiz{
+            color: black;
+        }
+    }
+    }
+    .registernowright{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 20px;
+        background-image:url("https://preview.colorlib.com/theme/course/images/search_background.jpg");
+        background-size: cover;
+        opacity: 0.6;
+        input{
+            padding: 10px;
+            border-radius: 10px;
+            width: 40%;
+        }
+        .searchbutton{
+            padding: 10px;
+            border-radius: 10px;
+            width: 40%;
+            background-color: #FFB606;
+            color: white;
+            border-style: none;
+            &:hover{
+                background-color: #f3d795;
+            }
+        }
+    }
+}

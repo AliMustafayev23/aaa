@@ -1,0 +1,22 @@
+.slider{
+    height:100vh;
+    width: 100%;
+}
+.sliderimage{
+    height: 100vh;
+    width: 100%;
+}
+.slidertext{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    color: white;
+    position: relative;
+    bottom: 50vh;
+    .education{
+        background-color: #FFB606;
+        padding: 10px;
+        color: white;
+    }
+}

@@ -1,0 +1,67 @@
+.popularcourse{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top:5%;
+    .line{
+        background-color: #FFB606;
+        width: 100px;
+        height: 5px;
+    }
+    .buttons{
+        display: flex;
+        column-gap: 20px;
+        height: 40px;
+        .search{
+            display: flex;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            input{
+                outline: none;
+                border-style: none;
+            }
+        }
+        .sort{
+            padding: 10px;
+            border-radius: 10px;
+            width: 40%;
+            background-color: black;
+            color: white;
+            border-style: none;
+            &:hover{
+                background-color: #0807025d;
+            }
+        }
+    }
+    .courses{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 60px;
+        padding-top:1%;
+        .course{
+            text-decoration: none;
+            color: black;
+            width: 30%;
+            height: 60vh;
+            .courseimage{
+                height: 50%;
+                width: 100%;
+            }
+            .coursedown{
+                background-color: #EAEBEC;
+                padding-top: 20px;
+              display: flex;
+              justify-content: space-between;
+align-items: center;
+.price{
+    background-color: #FFB606;
+    width: 10%;
+    padding: 10px;
+}
+            }
+        }
+    }
+}
